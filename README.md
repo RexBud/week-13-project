@@ -2,14 +2,13 @@
 
 The files in this repository were used to configure the network depicted below.
 
-[ElkNetVM diagram]
-(Images/ElkNetProject.png)
+[ElkNetVM diagram](Images/ElkNetProject.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [install-elk.yml](ansible/install-elk.yml)
-  - ansible/filebeat-playbook.yml
-  - ansible/metricbeat_playbook.yml
+  - [install-elk.yml](Ansible/install-elk.yml)
+  - [filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
+  - [metricbeat_playbook.yml](Ansible/metricbeat_playbook.yml)
 
 
 This document contains the following details:
@@ -34,7 +33,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat monitors system performance metrics
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function           | IP Address | Operating System |
 |----------|--------------------|------------|------------------|
@@ -78,7 +76,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/docker_ps_output.png)
+[docker ps](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
